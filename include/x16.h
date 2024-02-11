@@ -9,8 +9,13 @@ typedef int8_t s8;
 typedef uint16_t u16;
 typedef int16_t s16;
 
+// subroutine locations
 #define KEY_SUBROUTINE 0xFFE4
 
+// other PETSCII codes
+#define X16_CLEAR 0x93
+
+// colors
 #define X16_COLOR_RED 0x1C
 #define X16_COLOR_GREEN 0x1E
 #define X16_COLOR_BLUE 0x1F
