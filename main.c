@@ -1,11 +1,14 @@
 #include <stdio.h>
 #include "include/x16.h"
 
+unsigned char keycode;
 int main() {
-  u16 i = 0;
   while (1) {
-    i += 20;
-    printf("%d\n", i);
+    get_key(keycode);
+
+    if (keycode) {
+      printf("%u\n", keycode);
+    }
   }
   return 0;
 }
